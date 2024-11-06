@@ -1,0 +1,127 @@
+[Package]
+Name="sea_9811_lv2017"
+Version="2.1.0.487"
+Release=""
+ID=64e2850d86b8e97455ada4c9cc7c7c61
+File Format="vip"
+Format Version="2017"
+Display Name="SEA 9811"
+
+
+[Description]
+Description="1. Driver software (module support) for the <b>SEA 9811</b> cRIO ARINC-429 modules only.\0A2. For installation the <b>latest</b> JKI VI Package Manager (VIPM) is required.\0A3. For examples see LabVIEW Example Finder, use search word '9811'.\0A4. For documentation refer to the hardware and software manuals available through the LabVIEW Help menu after installation.\0A5. For EULA refer to the legal information available through the LabVIEW Help menu after installation."
+Summary="Driver software for SEA 9811 ARINC 429 modules."
+License=""
+Copyright="Copyright (c) 2019, S.E.A. Datentechnik GmbH"
+Distribution=""
+Vendor="SEA"
+URL="http://www.sea-gmbh.com/en/products/compactrio-products/sea-crio-modules/interface-modules/arinc-429-81/"
+Packager="S.E.A. Datentechnik GmbH"
+Demo="FALSE"
+Release Notes="<b>Current Version (2.1.0):</b>\0A- Support for NI cRIO-904x target added [CRIOARGI-57][CRIOARGI-58]"
+System Package="FALSE"
+Sub Package="FALSE"
+License Agreement="TRUE"
+
+
+[LabVIEW]
+close labview before install="FALSE"
+restart labview after install="TRUE"
+skip mass compile after install="FALSE"
+
+
+[Platform]
+Exclusive_LabVIEW_Version="LabVIEW>=17.0"
+Exclusive_LabVIEW_System="ALL"
+Exclusive_OS="Windows NT"
+
+
+[Script VIs]
+PreInstall=""
+PostInstall=""
+PreUninstall=""
+PostUninstall=""
+Verify=""
+PreBuild=""
+PostBuild=""
+
+
+[Dependencies]
+AutoReqProv=FALSE
+Requires=""
+Conflicts=""
+
+
+[Activation]
+License File=""
+Licensed Library=""
+
+
+[Files]
+Num File Groups="1"
+Sub-Packages=""
+Namespaces=""
+
+
+[File Group 0]
+Target Dir="<application>"
+Replace Mode="Always"
+Num Files=58
+File 0="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_Error.ctl"
+File 1="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Error.vi"
+File 2="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Rx_CreateChannelList.vi"
+File 3="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Rx_QueryChannelList.vi"
+File 4="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Rx_ReserveResource.vi"
+File 5="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Rx_RetrieveData.vi"
+File 6="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Tx_ReserveResource.vi"
+File 7="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IONode_Tx_TransmitData.vi"
+File 8="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_IOReferences.ctl"
+File 9="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Rx_GetConfig.vi"
+File 10="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Rx_GetLabelMemory.vi"
+File 11="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Rx_LabelMemory.ctl"
+File 12="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Rx_MasterReset.vi"
+File 13="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Rx_SetConfig.vi"
+File 14="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Rx_SetLabelMemory.vi"
+File 15="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Tx_Enable.vi"
+File 16="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Tx_FIFOReset.vi"
+File 17="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Tx_GetConfig.vi"
+File 18="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Tx_MasterReset.vi"
+File 19="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_MethodNode_Tx_SetConfig.vi"
+File 20="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_ModuleResource.vi"
+File 21="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_ModuleSupport.xml"
+File 22="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_NodeOperationType.ctl"
+File 23="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Error.vi"
+File 24="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Mod_ID.vi"
+File 25="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Mod_SerialNumber.vi"
+File 26="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Mod_VendorID.vi"
+File 27="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Rx_SimDataHS.vi"
+File 28="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Rx_SimDataLS.vi"
+File 29="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Rx_Status.vi"
+File 30="Targets/NI/FPGA/cRIO/other/SEA 9811/SEA 9811_PropertyNode_Tx_Status.vi"
+File 31="Targets/NI/FPGA/cRIO/other/SEA 9811/SPI/SEA 9811_SPI_Assert.vi"
+File 32="Targets/NI/FPGA/cRIO/other/SEA 9811/SPI/SEA 9811_SPI_Byte.vi"
+File 33="Targets/NI/FPGA/cRIO/other/SEA 9811/SPI/SEA 9811_SPI_Deassert.vi"
+File 34="Targets/NI/FPGA/cRIO/other/SEA 9811/nicrio_configToolPlugin.llb/SEA 9811_ModuleType.xml"
+File 35="Targets/NI/FPGA/cRIO/other/SEA 9811/Eeprom/SEA 9811_PropertyNode_ReadEepromU16.vi"
+File 36="Targets/NI/FPGA/cRIO/other/SEA 9811/Eeprom/SEA 9811_PropertyNode_ReadEepromU32.vi"
+File 37="help/SEA/SEA 9811/SEA 9811.txt"
+File 38="help/SEA/SEA 9811/SEA 9811_HardwareManual.vi"
+File 39="help/SEA/SEA 9811/SEA 9811_LegalInformation.vi"
+File 40="help/SEA/SEA 9811/SEA 9811_SoftwareManual.vi"
+File 41="help/SEA/SEA 9811/_Manuals/SEA 9811_HardwareManual.pdf"
+File 42="help/SEA/SEA 9811/_Manuals/SEA 9811_SoftwareManual.pdf"
+File 43="help/SEA/SEA 9811/_LegalInformation/SEA_9811_EULA.txt"
+File 44="examples/SEA/SEA 9811/SEA-9811_ReceiverLoopback/SEA-9811_ReceiverLoopback.lvproj"
+File 45="examples/SEA/SEA 9811/SEA-9811_ReceiverLoopback/SEA-9811_ReceiverLoopback_FPGA.vi"
+File 46="examples/SEA/SEA 9811/SEA-9811_ReceiverLoopback/SEA-9811_ReceiverLoopback_RT.vi"
+File 47="examples/SEA/SEA 9811/SEA-9811_ReceiverLoopback/SubVIs/SEA-9811_ReceiverLoopback_RCR.ctl"
+File 48="examples/SEA/SEA 9811/SEA-9811_ReceiverLoopback/SubVIs/SEA-9811_ReceiverLoopback_ReverseU8Bitorder.vi"
+File 49="examples/SEA/SEA 9811/SEA-9811_ReceiverLoopback/SubVIs/SEA-9811_ReceiverLoopback_RSR.ctl"
+File 50="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SEA-9811_ReceiverAndTransmitter.lvproj"
+File 51="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SEA-9811_ReceiverAndTransmitter_FPGA.vi"
+File 52="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SEA-9811_ReceiverAndTransmitter_RT.vi"
+File 53="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RCR.ctl"
+File 54="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RSR.ctl"
+File 55="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_TCR.ctl"
+File 56="examples/SEA/SEA 9811/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_TSR.ctl"
+File 57="examples/exbins/SEA-9811_Examples.bin3"

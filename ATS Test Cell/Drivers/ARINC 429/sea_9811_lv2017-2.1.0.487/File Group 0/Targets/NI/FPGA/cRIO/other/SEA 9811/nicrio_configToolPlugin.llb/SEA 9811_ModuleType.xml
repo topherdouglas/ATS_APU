@@ -1,0 +1,7 @@
+<ModuleType>
+  <ModuleName>SEA 9811</ModuleName>
+  <Description>ARINC 429, 8-ch input, 1-ch output, high speed</Description>
+  <VendorID>0x4711</VendorID>
+  <ProductID>0065</ProductID>
+  <ModelCode>9811</ModelCode>  
+</ModuleType>    

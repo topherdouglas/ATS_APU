@@ -1,0 +1,628 @@
+<ModuleSupport>
+
+  <MDKVersion>2.1</MDKVersion>
+  
+  
+  
+  <Module name="SEA 9811">  
+  
+    <ProjectItemID>99</ProjectItemID> 
+	
+    <ResourceVI name="SEA 9811_ModuleResource.vi"/> 
+	
+    <SupportedInterfaceList>
+      <!-- Module Props -->
+	  <Interface>Mod ID</Interface>      
+      <Interface>Mod SerialNumber</Interface>
+	  <Interface>Mod VendorID</Interface>
+	  <!-- Receiver Props -->	 	  
+      <Interface>Rx SimData HighSpeed</Interface>
+	  <Interface>Rx SimData LowSpeed</Interface>
+	  <Interface>Rx Status</Interface>	  
+	  <!-- Receiver Methods -->
+	  <Interface>Rx Config Get</Interface>
+	  <Interface>Rx Config Set</Interface>
+	  <Interface>Rx Labels Get</Interface>
+	  <Interface>Rx Labels Set</Interface>
+	  <Interface>Rx Master Reset</Interface>	  
+	  <!-- Transmitter Props -->
+	  <Interface>Tx Status</Interface>
+	  <!-- Transmitter Methods -->
+	  <Interface>Tx Config Get</Interface>
+	  <Interface>Tx Config Set</Interface>
+	  <Interface>Tx Enable</Interface>
+	  <Interface>Tx FIFO Reset</Interface>
+      <Interface>Tx Master Reset</Interface>	  
+	</SupportedInterfaceList>
+ 
+    <IOChannelList>    	  
+	  <IOChannel name="Rx0">
+        <ProjectItemID>0</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>      
+      <IOChannel name="Rx1">
+        <ProjectItemID>1</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>      
+      <IOChannel name="Rx2">
+        <ProjectItemID>2</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>      
+      <IOChannel name="Rx3">
+        <ProjectItemID>3</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>
+	  <IOChannel name="Rx4">
+        <ProjectItemID>4</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>	  
+	  <IOChannel name="Rx5">
+        <ProjectItemID>5</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>	  
+	  <IOChannel name="Rx6">
+        <ProjectItemID>6</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>	  
+	  <IOChannel name="Rx7">
+        <ProjectItemID>7</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogInput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>	  
+	  <IOChannel name="Tx0">
+        <ProjectItemID>8</ProjectItemID>
+        <SupportedInterfaceList>
+          <Interface>AnalogOutput</Interface>
+        </SupportedInterfaceList>
+      </IOChannel>
+    </IOChannelList>  
+	
+  </Module>
+  
+  <MethodNodeInterfaceList> 
+  
+	<Interface name="Rx Master Reset">	 
+      <NodeIcon>DI</NodeIcon>       
+      <MethodVIScriptInfo name="MasterResetInScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Rx_MasterReset.vi">
+            <SequenceOrder>0</SequenceOrder>                       
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+    </Interface>
+	
+	<Interface name="Rx Config Get">	
+	  <MethodNodeTerminalList>
+	    <MethodNodeTerminal name="Channel Number">      
+          <DataType>U8</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+          <TerminalOrder>0</TerminalOrder>
+        </MethodNodeTerminal>
+		<MethodNodeTerminal name="Control Register">      
+          <DataType>U16</DataType>       
+          <Direction>Read</Direction>
+		  <TerminalOrder>1</TerminalOrder>
+        </MethodNodeTerminal>                  
+      </MethodNodeTerminalList>	  
+      <NodeIcon>AO</NodeIcon>       
+      <MethodVIScriptInfo name="RxConfigGetScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Rx_GetConfig.vi">
+            <SequenceOrder>0</SequenceOrder>
+			<TerminalConnectionList>            
+              <TerminalConnection name="ChannelNumber">
+                <NodeTerminalName>Channel Number</NodeTerminalName>
+                <ConnectorPaneTerminal>0</ConnectorPaneTerminal>
+              </TerminalConnection>
+              <TerminalConnection name="ControlRegister">
+                <NodeTerminalName>Control Register</NodeTerminalName>
+                <ConnectorPaneTerminal>4</ConnectorPaneTerminal>
+              </TerminalConnection>                               
+            </TerminalConnectionList>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>	  
+    </Interface>
+	
+	<Interface name="Rx Config Set">	
+	  <MethodNodeTerminalList>
+	    <MethodNodeTerminal name="Channel Number">      
+          <DataType>U8</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+          <TerminalOrder>0</TerminalOrder>
+        </MethodNodeTerminal>
+		<MethodNodeTerminal name="Control Register">      
+          <DataType>U16</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+		  <TerminalOrder>1</TerminalOrder>
+        </MethodNodeTerminal>                  
+      </MethodNodeTerminalList>	  
+      <NodeIcon>AI</NodeIcon>       
+      <MethodVIScriptInfo name="RxConfigSetScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Rx_SetConfig.vi">
+            <SequenceOrder>0</SequenceOrder>
+			<TerminalConnectionList>            
+              <TerminalConnection name="ChannelNumber">
+                <NodeTerminalName>Channel Number</NodeTerminalName>
+                <ConnectorPaneTerminal>0</ConnectorPaneTerminal>
+              </TerminalConnection>
+              <TerminalConnection name="ControlRegister">
+                <NodeTerminalName>Control Register</NodeTerminalName>
+                <ConnectorPaneTerminal>5</ConnectorPaneTerminal>
+              </TerminalConnection>                               
+            </TerminalConnectionList>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+	</Interface>
+	
+	<Interface name="Rx Labels Get">	
+	  <MethodNodeTerminalList>
+	    <MethodNodeTerminal name="Channel Number">      
+          <DataType>U8</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+          <TerminalOrder>0</TerminalOrder>
+        </MethodNodeTerminal>
+		<MethodNodeTerminal name="Label Filter">      
+          <DataType>SEA 9811_MethodNode_Rx_LabelMemory.ctl</DataType>       
+          <Direction>Read</Direction>
+		  <TerminalOrder>1</TerminalOrder>
+        </MethodNodeTerminal>                  
+      </MethodNodeTerminalList>	  
+      <NodeIcon>AO</NodeIcon>       
+      <MethodVIScriptInfo name="RxLabelsGetScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Rx_GetLabelMemory.vi">
+            <SequenceOrder>0</SequenceOrder>
+			<TerminalConnectionList>            
+              <TerminalConnection name="ChannelNumber">
+                <NodeTerminalName>Channel Number</NodeTerminalName>
+                <ConnectorPaneTerminal>0</ConnectorPaneTerminal>
+              </TerminalConnection>
+              <TerminalConnection name="LabelFilter">
+                <NodeTerminalName>Label Filter</NodeTerminalName>
+                <ConnectorPaneTerminal>4</ConnectorPaneTerminal>
+              </TerminalConnection>                               
+            </TerminalConnectionList>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>	  
+    </Interface>	
+
+	<Interface name="Rx Labels Set">	
+	  <MethodNodeTerminalList>
+	    <MethodNodeTerminal name="Channel Number">      
+          <DataType>U8</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+          <TerminalOrder>0</TerminalOrder>
+        </MethodNodeTerminal>
+		<MethodNodeTerminal name="Label Filter">      
+          <DataType>SEA 9811_MethodNode_Rx_LabelMemory.ctl</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+		  <TerminalOrder>1</TerminalOrder>
+        </MethodNodeTerminal>                  
+      </MethodNodeTerminalList>	  
+      <NodeIcon>AI</NodeIcon>       
+      <MethodVIScriptInfo name="SetRxLabelMemoryScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Rx_SetLabelMemory.vi">
+            <SequenceOrder>0</SequenceOrder>
+			<TerminalConnectionList>            
+              <TerminalConnection name="ChannelNumber">
+                <NodeTerminalName>Channel Number</NodeTerminalName>
+                <ConnectorPaneTerminal>0</ConnectorPaneTerminal>
+              </TerminalConnection>
+              <TerminalConnection name="LabelFilter">
+                <NodeTerminalName>Label Filter</NodeTerminalName>
+                <ConnectorPaneTerminal>5</ConnectorPaneTerminal>
+              </TerminalConnection>                               
+            </TerminalConnectionList>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+	</Interface>
+	
+	<Interface name="Tx Config Get">	
+	  <MethodNodeTerminalList>	    
+		<MethodNodeTerminal name="Control Register">      
+          <DataType>U16</DataType>       
+          <Direction>Read</Direction>
+		  <TerminalOrder>0</TerminalOrder>
+        </MethodNodeTerminal>                  
+      </MethodNodeTerminalList>	  
+      <NodeIcon>AO</NodeIcon>       
+      <MethodVIScriptInfo name="TxConfigGetScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Tx_GetConfig.vi">
+            <SequenceOrder>0</SequenceOrder>
+			<TerminalConnectionList>              
+              <TerminalConnection name="ControlRegister">
+                <NodeTerminalName>Control Register</NodeTerminalName>
+                <ConnectorPaneTerminal>4</ConnectorPaneTerminal>
+              </TerminalConnection>                               
+            </TerminalConnectionList>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>	  
+    </Interface>
+	
+	<Interface name="Tx Config Set">	
+	  <MethodNodeTerminalList>
+	    <MethodNodeTerminal name="Control Register">      
+          <DataType>U16</DataType>       
+          <Direction>Write</Direction>
+		  <Required>true</Required>
+		  <TerminalOrder>0</TerminalOrder>
+        </MethodNodeTerminal>                  
+      </MethodNodeTerminalList>	  
+      <NodeIcon>AI</NodeIcon>       
+      <MethodVIScriptInfo name="TxConfigSetScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Tx_SetConfig.vi">
+            <SequenceOrder>0</SequenceOrder>
+			<TerminalConnectionList>            
+              <TerminalConnection name="ControlRegister">
+                <NodeTerminalName>Control Register</NodeTerminalName>
+                <ConnectorPaneTerminal>0</ConnectorPaneTerminal>
+              </TerminalConnection>                               
+            </TerminalConnectionList>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+	</Interface>
+	
+	<Interface name="Tx Enable">	 
+      <NodeIcon>DI</NodeIcon>       
+      <MethodVIScriptInfo name="EnableOutScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Tx_Enable.vi">
+            <SequenceOrder>0</SequenceOrder>                       
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+    </Interface>
+	
+	<Interface name="Tx FIFO Reset">	 
+      <NodeIcon>DI</NodeIcon>       
+      <MethodVIScriptInfo name="FIFOResetOutScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Tx_FIFOReset.vi">
+            <SequenceOrder>0</SequenceOrder>                       
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+    </Interface>	
+	
+	<Interface name="Tx Master Reset">	 
+      <NodeIcon>DI</NodeIcon>       
+      <MethodVIScriptInfo name="MasterResetOutScriptInfo">            
+        <VIList>
+          <VI name="SEA 9811_MethodNode_Tx_MasterReset.vi">
+            <SequenceOrder>0</SequenceOrder>                       
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+          </VI>
+        </VIList>
+      </MethodVIScriptInfo>
+    </Interface>
+	
+  </MethodNodeInterfaceList>  
+
+  <PropertyNodeInterfaceList>      
+   
+    <Interface name="Mod ID">    
+      <DataType>U16</DataType>
+      <Direction>Read</Direction>
+      <NodeIcon>AO</NodeIcon>
+      <ReadVIScriptInfo name="ModIDScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Mod_ID.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>            
+        </VIList>
+      </ReadVIScriptInfo>
+    </Interface>
+     
+    <Interface name="Mod SerialNumber">    
+      <DataType>U32</DataType>
+      <Direction>Read</Direction>
+      <NodeIcon>AO</NodeIcon>
+      <ReadVIScriptInfo name="ModSerialNumberScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Mod_SerialNumber.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>             
+        </VIList>
+      </ReadVIScriptInfo>
+    </Interface>
+	 
+	<Interface name="Mod VendorID">    
+      <DataType>U16</DataType>
+      <Direction>Read</Direction>
+      <NodeIcon>AO</NodeIcon>
+      <ReadVIScriptInfo name="ModVendorIDScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Mod_VendorID.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>            
+        </VIList>
+      </ReadVIScriptInfo>
+     </Interface>
+	 
+	<Interface name="Rx SimData HighSpeed">    
+      <DataType>U32</DataType>
+      <Direction>Write</Direction>
+      <NodeIcon>AI</NodeIcon>
+      <WriteVIScriptInfo name="RxSimDataHSScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Rx_SimDataHS.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>             
+        </VIList>
+      </WriteVIScriptInfo>
+    </Interface>
+
+    <Interface name="Rx SimData LowSpeed">    
+      <DataType>U32</DataType>
+      <Direction>Write</Direction>
+      <NodeIcon>AI</NodeIcon>
+      <WriteVIScriptInfo name="RxSimDataLSScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Rx_SimDataLS.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>             
+        </VIList>
+      </WriteVIScriptInfo>
+    </Interface>
+
+    <Interface name="Rx Status">    
+      <DataType>U16</DataType>
+      <Direction>Read</Direction>
+      <NodeIcon>AI</NodeIcon>
+      <ReadVIScriptInfo name="RxStatusScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Rx_Status.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>             
+        </VIList>
+      </ReadVIScriptInfo>
+    </Interface>	
+	
+	<Interface name="Tx Status">    
+      <DataType>U8</DataType>
+      <Direction>Read</Direction>
+      <NodeIcon>AI</NodeIcon>
+      <ReadVIScriptInfo name="TxStatusScriptInfo">
+        <UseInstanceData>false</UseInstanceData>
+        <VIList>
+          <VI name="SEA 9811_PropertyNode_Tx_Status.vi">
+            <SequenceOrder>0</SequenceOrder>
+            <VIHasTerminalConnection>true</VIHasTerminalConnection>
+          </VI>
+          <VI name="SEA 9811_PropertyNode_Error.vi">
+            <SequenceOrder>1</SequenceOrder>
+            <ErrorHandling>true</ErrorHandling>
+            <VIScope>NodeScoped</VIScope>
+          </VI>             
+        </VIList>
+      </ReadVIScriptInfo>
+    </Interface>
+	 
+   </PropertyNodeInterfaceList>
+
+
+  <IONodeInterfaceList>
+  
+    <Interface name="AnalogInput">
+      <DataType>U32</DataType>
+      <Direction>Read</Direction>   
+      <NodeIcon>AI</NodeIcon>            
+       <ReadVIScriptInfo name="AnalogInputScriptInfo">
+          <UseInstanceData>true</UseInstanceData>
+          <VIList>
+            <VI name="SEA 9811_IONode_Rx_ReserveResource.vi">
+              <SequenceOrder>0</SequenceOrder>
+              <VIScope>NodeScoped</VIScope>
+            </VI>        
+            <VI name="SEA 9811_IONode_Rx_CreateChannelList.vi">
+              <SequenceOrder>1</SequenceOrder>
+              <VIScope>ChannelScoped</VIScope>			  
+            </VI> 
+            <VI name="SEA 9811_IONode_Rx_QueryChannelList.vi">
+              <SequenceOrder>2</SequenceOrder>
+              <VIScope>NodeScoped</VIScope>
+            </VI>         
+            <VI name="SEA 9811_IONode_Rx_RetrieveData.vi">
+              <SequenceOrder>3</SequenceOrder>
+              <VIScope>ChannelScoped</VIScope>
+			  <VIHasTerminalConnection>true</VIHasTerminalConnection>			  
+            </VI>
+            <VI name="SEA 9811_IONode_Error.vi">
+              <SequenceOrder>4</SequenceOrder>
+              <ErrorHandling>true</ErrorHandling>
+           </VI>          
+          </VIList>
+       </ReadVIScriptInfo>           
+    </Interface>  
+  
+    <Interface name="AnalogOutput">
+      <DataType>U32</DataType>
+      <Direction>Write</Direction>
+      <NodeIcon>AO</NodeIcon>
+        <WriteVIScriptInfo name="AnalogOutputScriptInfo">
+          <UseInstanceData>true</UseInstanceData>
+          <VIList>
+			<VI name="SEA 9811_IONode_Tx_ReserveResource.vi">
+              <SequenceOrder>0</SequenceOrder>
+              <VIScope>NodeScoped</VIScope>
+            </VI>
+            <VI name="SEA 9811_IONode_Tx_TransmitData.vi">
+              <SequenceOrder>1</SequenceOrder>
+              <VIScope>ChannelScoped</VIScope>
+			  <VIHasTerminalConnection>true</VIHasTerminalConnection>
+            </VI>  			
+            <VI name="SEA 9811_IONode_Error.vi">
+              <SequenceOrder>2</SequenceOrder>
+              <ErrorHandling>true</ErrorHandling>             
+            </VI>            
+          </VIList>
+        </WriteVIScriptInfo>
+    </Interface>
+
+ </IONodeInterfaceList> 
+  
+  <InternalChannelList>  
+    <InternalChannel name="MemAddress">
+      <InternalChannelType>Blocking</InternalChannelType>
+      <DataType>U16</DataType>
+    </InternalChannel>	
+	<InternalChannel name="MemData">
+       <InternalChannelType>Blocking</InternalChannelType>
+       <DataType>U32</DataType>
+    </InternalChannel> 
+    <InternalChannel name="StartNode">
+      <InternalChannelType>Blocking</InternalChannelType>
+      <DataType>SEA 9811_NodeOperationType.ctl</DataType>
+    </InternalChannel>    
+	<InternalChannel name="NodeComplete">
+      <InternalChannelType>Occurrence</InternalChannelType>
+    </InternalChannel>    
+    <InternalChannel name="U16MultiPurpose">
+      <InternalChannelType>Blocking</InternalChannelType>
+      <DataType>U16</DataType>
+    </InternalChannel>     
+    <InternalChannel name="U8MultiPurpose">
+      <InternalChannelType>Blocking</InternalChannelType>
+      <DataType>U8</DataType>
+    </InternalChannel>    
+    <InternalChannel name="ModuleError">
+      <InternalChannelType>Asynchronous</InternalChannelType>
+      <DataType>SEA 9811_Error.ctl</DataType>
+    </InternalChannel>        
+  </InternalChannelList>  
+
+  <ModuleModeDefinition>
+    <NormalOperationMode>    
+      <!--
+	  <SPIConfiguration>
+        <SPIHalfTauTicks>20</SPIHalfTauTicks>
+      </SPIConfiguration>
+	  -->
+	  <DigitalLines>
+		<DIO0>OutputOnly</DIO0>
+		<DIO1>OutputOnly</DIO1>
+		<DIO2>InputOnly</DIO2>
+		<DIO3>OutputOnly</DIO3>
+		<DIO4>OutputOnly</DIO4>
+		<DIO5>OutputOnly</DIO5>
+		<DIO6>InputOnly</DIO6>
+		<DIO7>OutputOnly</DIO7>
+		<DIO8>OutputOnly</DIO8>
+	  </DigitalLines>      
+    </NormalOperationMode>
+  </ModuleModeDefinition>
+  
+</ModuleSupport>

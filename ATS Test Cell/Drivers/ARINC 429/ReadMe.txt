@@ -1,0 +1,1 @@
+Install the latest VI package Manager. Once installed use the .vip to install the package. 

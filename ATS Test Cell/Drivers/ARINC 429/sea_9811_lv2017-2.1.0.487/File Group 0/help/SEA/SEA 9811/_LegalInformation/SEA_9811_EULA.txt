@@ -1,0 +1,63 @@
+Disclaimer for the following products: C Series module SEA 9811 (all versions)
+
+Disclaimer, Limitation of Liability and User Responsibilities
+
+When using or operating the S.E.A. Compact RIO Modules and the provided software, accessories, utilities or documentation in any form you must agree to the following terms and conditions.
+By downloading or installing the software, by clicking on the appropriate button, you agree with the conditions in this agreement.
+Please revise the latest technical information on the S.E.A. website (www.sea-gmbh.com) before installing or using the hardware and software package.
+
+Definitions
+“You” : means you as an individual, if you going to use the hardware or software provided by S.E.A. “You” also means your employer if you are going to use the software or hardware in the scope of your employment.
+“S.E.A.” :  means the company S.E.A. Datentechnik GmbH.
+“Software” :  means all accompanying software including utilities and documentation delivered by S.E.A. or its authorized representatives.
+“Hardware” :  means all accompanying hardware components (e.g. PCB, cables, enclosures)  including utilities and documentation delivered by S.E.A. or its authorized representatives.
+“in Use” : Software is considered to be “in use” when loaded into any kind of memory for execution by a processor or similar device for using on a single system. This does not include a shared use via shared or networked devices.
+“Compact RIO Module” and “cRIO Module”  and “C Series Module” : All terms refer and mean the provided S.E.A. product for use with the RIO hardware and software platforms of National Instruments.
+If you do NOT agree, you have to cancel the installation process and you can resend the hardware and software package within a period of 30 days after delivery. In this case S.E.A. will refund the product price and shipping costs.
+
+Shipping Address is:
+S.E.A. Datentechnik GmbH
+Muelheimer Str. 7
+D-53840 Troisdorf
+Germany
+
+General
+YOU AGREE THAT YOU ARE SOLELY RESPONSIBLE FOR THE ACCURACY AND ADEQUACY OF THE SOFTWARE AND HARDWARE FOR YOUR INTENDED USE AND YOU WILL INDEMNIFY AND HOLD HARMLESS S.E.A. FROM ANY 3RD PARTY SUIT TO THE EXTENT BASED UPON THE ACCURACY AND ADEQUACY OF THE HARDWARE AND SOFTWARE IN YOUR USE. WITHOUT LIMITATION, THE HARDWARE AND SOFTWARE IS NOT INTENDED FOR USE IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION, COMMUNICATION SYSTEMS,  AIR TRAFFIC CONTROL EQUIPMENT OR MEDICAL APPLICATIONS, WHERE THE FAILURE OF THE HARDWARE OR SOFTWARE COULD LEAD TO DEATH, PERSONAL INJURY OR SEVERE PHYSICAL,  ENVIRONMENTAL OR DAMAGE or PECUNIARY LOSS of ANY KIND.
+ALL RIGHTS NOT EXPRESSIVELY GRANTED TO YOU IN THIS AGREEMENT ARE RESERVED TO S.E.A.  DATENTECHNIK GmbH.
+
+Accessories
+Accessories may have been supplied with the product which are specifically selected and tested for use with the product. Use of other accessories may severely degrade performance or even damage the product or other accessories, and will void the warranty. Do not try to modify, open or break the product or its components. There are no user accessible service parts inside.
+
+Software
+Follow the installation instructions as stated and described in the user hardware manual and user software manual, as well as the specific hardware operating instructions delivered with the system. 
+The software supplied is solely for usage along with S.E.A. provided hardware. Making copies is only valid for backup reasons.  Modification or reverse engineering of the software is prohibited unless expressively provided by written agreement of an authorized S.E.A. representative or authorized by applicable laws. The software is the property of S.E.A. and is protected by international copyright treaties and statutory provisions. The user receives only the non-exclusive license to use the software for the accompanied hardware for contractual purposes. Making unauthorized copies or multiple use of the software on more than one computer system is strictly forbidden. You have especially no rights to sub-license, lease, or rent the software.
+
+Notice
+In order to help you fulfilling any warranty obligations or provide you with safety instructions, read comprehensively the hardware operating instructions (hardware manual, software manual) BEFORE operating the hardware and software.
+WARNING REGARDING USE OF S.E.A. Datentechnik GmbH PRODUCTS
+(1) S.E.A. PRODUCTS ARE NOT DESIGNED WITH COMPONENTS AND TESTING FOR A LEVEL OF RELIABILITY SUITABLE FOR USE IN OR IN CONNECTION WITH SURGICAL IMPLANTS OR AS CRITICAL COMPONENTS IN ANY LIFE SUPPORT SYSTEMS WHO’S FAILURE TO PERFORM CAN REASONABLY BE EXPECTED TO CAUSE SIGNIFICANT INJURY TO A HUMAN.
+(2) IN ANY APPLICATION, INCLUDING THE ABOVE, RELIABILITY OF OPERATION OF THE SOFTWARE PRODUCTS CAN BE IMPAIRED BY ADVERSE FACTORS, INCLUDING BUT NOT LIMITED TO FLUCTUATIONS IN ELECTRICAL POWER SUPPLY, COMPUTER HARDWARE MALFUNCTIONS, COMPUTER OPERATING SYSTEM SOFTWARE FITNESS, FITNESS OF COMPILERS AND DEVELOPMENT SOFTWARE USED TO DEVELOP AN APPLICATION, INSTALLATION ERRORS, SOFTWARE AND HARDWARE COMPATIBILITY PROBLEMS, MALFUNCTIONS OR FAILURES OF ELECTRONIC MONITORING OR CONTROL DEVICES, TRANSIENT FAILURES OF ELECTRONIC SYSTEMS (HARDWARE AND/OR SOFTWARE), UNANTICIPATED USES OR MISUSES, OR ERRORS ON THE PART OF THE USER OR APPLICATIONS DESIGNER (ADVERSE FACTORS SUCH AS THESE ARE HEREAFTER COLLECTIVELY TERMED “SYSTEM FAILURES”). ANY APPLICATION WHERE A SYSTEM FAILURE WOULD CREATE A RISK OF HARM TO PROPERTY OR PERSONS (INCLUDING THE RISK OF BODILY INJURY AND DEATH) SHOULD NOT BE RELIANT SOLELY UPON ONE FORM OF ELECTRONIC SYSTEM DUE TO THE RISK OF SYSTEM FAILURE. TO AVOID DAMAGE, INJURY, OR DEATH, THE USER OR APPLICATION DESIGNER MUST TAKE REASONABLY PRUDENT STEPS TO PROTECT AGAINST SYSTEM FAILURES, INCLUDING BUT NOT LIMITED TO BACK-UP OR SHUT DOWN MECHANISMS.
+BECAUSE EACH END-USER SYSTEM IS CUSTOMIZED AND DIFFERS FROM S.E.A.s' TESTING PLATFORMS AND BECAUSE A USER OR APPLICATION DESIGNER MAY USE  S.E.A. PRODUCTS IN COMBINATION WITH OTHER PRODUCTS IN A MANNER NOT EVALUATED OR CONTEMPLATED BY S.E.A., THE USER OR APPLICATION DESIGNER IS ULTIMATELY RESPONSIBLE FOR VERIFYING AND VALIDATING THE SUITABILITY OF S.E.A. PRODUCTS WHENEVER S.E.A. PRODUCTS ARE INCORPORATED IN A SYSTEM OR APPLICATION, INCLUDING, WITHOUT LIMITATION, THE APPROPRIATE DESIGN, PROCESS AND SAFETY LEVEL OF SUCH SYSTEM OR APPLICATION.
+
+Disclaimer and Limitation of Liability
+S.E.A. Datentechnik GmbH and its subsidiaries assume no responsibility for any damage, personal injury or loss resulting from the use of this product, software and documentation. 
+S.E.A. Datentechnik GmbH and its subsidiaries assume no responsibility for any loss or claims by third parties which may arise through the use of the hardware, software or documentation. 
+S.E.A. Datentechnik GmbH and its subsidiaries assume no responsibility for any damage or loss caused by deletion of data as a result of malfunction, dead battery, or repairs. Under no circumstances shall S.E.A. Datentechnik GmbH  and its subsidiaries are responsible for any loss of data or income or any special, incidental, consequential or indirect damages howsoever caused. 
+The contents of the documentation, manuals etc. are provided “as is”. Except as required by applicable laws, no warranties of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose, are made in relation to the accuracy, reliability or contents of this user guide.
+S.E.A. Datentechnik GmbH reserves the right to revise this disclaimer, accompanied documentation or withdraw it at any time without prior notice. 
+S.E.A. Datentechnik GmbH reserves the right to make changes and improvements to any hardware or software.
+Only qualified and especially trained personnel are allowed to handle the hardware and software. Appropriate trainings are offered by S.E.A. 
+S.E.A. is not liable for damages caused by disregard of safety regulations or any other fault of a user. 
+
+This agreement terminates automatically when you fail to comply with the terms and conditions of this agreement. When this agreement terminates you must destroy all copies of the software.
+All matters concerning the hardware, software or documentation delivered, contractual issues are subject to German law only. Venue is Troisdorf.
+
+If you are unsure about the usage of the product please contact:
+
+S.E.A. Datentechnik GmbH
+Mülheimer Str. 7
+53840 Troisdorf
+Tel. +49 2241 127 37 0
+info@sea-gmbh.com
+
+Troisdorf, 1. March 2012
